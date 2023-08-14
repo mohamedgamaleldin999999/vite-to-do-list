@@ -1,10 +1,19 @@
-import { useState } from "react";
-
 const Navbar = () => {
-  console.log(useState(false));
   return (
     <nav>
-      nav bar content
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>
+          <button>
+            Services <span>&#8595;</span>
+          </button>
+          <ul>
+            <li>Design</li>
+            <li>Development</li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   );
 };
