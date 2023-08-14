@@ -17,7 +17,11 @@ const TodosLogic = () => {
     },
   ];
   return (
-    <div>the content goes here</div>
+    <ul>
+      {todos.map((todo) => (
+        <li>{todo.title}</li>
+      ))}
+    </ul>
   );
 };
 export default TodosLogic;
