@@ -1,7 +1,8 @@
 const TodosList = (props) => {
+  const { todosProps } = props;
   return (
     <ul>
-      {props.todosProps.map((todo) => (
+      {todosProps.map((todo) => (
         <li>{todo.title}</li>
       ))}
     </ul>
